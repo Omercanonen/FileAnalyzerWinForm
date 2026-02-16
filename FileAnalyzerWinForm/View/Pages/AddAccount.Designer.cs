@@ -38,6 +38,7 @@
             this.dataGridViewUsers = new System.Windows.Forms.DataGridView();
             this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DisplayName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buttonShowPassword = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,6 +57,7 @@
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(182, 32);
             this.textBoxPassword.TabIndex = 1;
+            this.textBoxPassword.UseSystemPasswordChar = true;
             // 
             // textBoxDisplayName
             // 
@@ -127,10 +129,21 @@
             this.DisplayName.HeaderText = "DisplayName";
             this.DisplayName.Name = "DisplayName";
             // 
+            // buttonShowPassword
+            // 
+            this.buttonShowPassword.Location = new System.Drawing.Point(422, 62);
+            this.buttonShowPassword.Name = "buttonShowPassword";
+            this.buttonShowPassword.Size = new System.Drawing.Size(57, 29);
+            this.buttonShowPassword.TabIndex = 8;
+            this.buttonShowPassword.Text = "Goster";
+            this.buttonShowPassword.UseVisualStyleBackColor = true;
+            this.buttonShowPassword.Click += new System.EventHandler(this.buttonShowPassword_Click);
+            // 
             // AddAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonShowPassword);
             this.Controls.Add(this.dataGridViewUsers);
             this.Controls.Add(this.labelDisplayName);
             this.Controls.Add(this.labelPassword);
@@ -159,5 +172,6 @@
         private System.Windows.Forms.DataGridView dataGridViewUsers;
         private System.Windows.Forms.DataGridViewTextBoxColumn Username;
         private System.Windows.Forms.DataGridViewTextBoxColumn DisplayName;
+        private System.Windows.Forms.Button buttonShowPassword;
     }
 }

@@ -35,7 +35,7 @@ namespace FileAnalyzerWinForm.View
             }
             else
             {
-                labelUser.Text = "Welcome, Guest";
+                labelUser.Text = "Guest";
             }
         }
 

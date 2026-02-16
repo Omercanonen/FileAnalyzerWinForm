@@ -82,6 +82,20 @@ namespace FileAnalyzerWinForm.View.Pages
                 RefreshUsers();
             }
         }
+        private bool _passwordVisible = false;
+        private void buttonShowPassword_Click(object sender, EventArgs e)
+        {
+            _passwordVisible = !_passwordVisible;
 
+            if (_passwordVisible)
+            {
+
+                textBoxPassword.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                textBoxPassword.UseSystemPasswordChar = true;
+            }
+        }
     }
 }
